@@ -1,0 +1,79 @@
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  padding: 15px 0;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+  position: absolute;
+  left: 30px;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Menu styling */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 16px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.nav-menu li a:hover {
+  background-color: #ffffff;
+  color: #4e54c8;
+  transform: scale(1.1);
+}
+
+/* Scrolled navbar effect */
+.navbar.scrolled {
+  background: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Section styling */
+section {
+  height: 100vh;
+  padding-top: 100px;
+  text-align: center;
+  font-size: 38px;
+  background: linear-gradient(to bottom, #f0f0f0, #ffffff);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
