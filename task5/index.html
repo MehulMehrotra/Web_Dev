@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gradients + Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Gradient Shapes -->
+  <section class="section">
+    <h1>Blue Gradient Shapes</h1>
+    <p class="subtitle">A blue gradient square and a circle with gradient.</p>
+
+    <div class="shapes">
+      <div class="shape square" aria-label="Blue Gradient Square"></div>
+      <div class="shape circle" aria-label="Circle with Gradient"></div>
+    </div>
+  </section>
+
+  <!-- Weather App -->
+  <section class="section">
+    <h2>Weather Now</h2>
+    <p class="subtitle">Get the current weather by your location or by city name.</p>
+
+    <div class="controls">
+      <form id="searchForm" class="search">
+        <input id="cityInput" type="text" placeholder="Enter city (e.g., Mumbai)" aria-label="City name" />
+        <button type="submit">Search</button>
+      </form>
+      <button id="geoBtn" class="geo-btn">Use My Location</button>
+    </div>
+
+    <div id="status" class="status" role="status" aria-live="polite"></div>
+
+    <div id="weatherCard" class="card hidden">
+      <div class="card-header">
+        <div>
+          <h3 id="placeName">—</h3>
+          <small id="updatedAt">Updated: —</small>
+        </div>
+        <div class="big-temp">
+          <span id="temperature">—</span><span class="unit">°C</span>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <div class="metric">
+          <div class="label">Condition</div>
+          <div id="condition" class="value">—</div>
+        </div>
+        <div class="metric">
+          <div class="label">Feels Like</div>
+          <div><span id="feelsLike">—</span> °C</div>
+        </div>
+        <div class="metric">
+          <div class="label">Humidity</div>
+          <div><span id="humidity">—</span> %</div>
+        </div>
+        <div class="metric">
+          <div class="label">Wind</div>
+          <div><span id="windSpeed">—</span> km/h (<span id="windDir">—</span>°)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">© 2025 Your Name</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

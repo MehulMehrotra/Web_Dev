@@ -1,0 +1,131 @@
+/* Base */
+* { box-sizing: border-box; }
+:root {
+  --bg: #f4f7fb;
+  --card: #ffffff;
+  --text: #1f2a44;
+  --muted: #66738d;
+  --accent: #1e5eff;
+  --shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+html, body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* Sections */
+.section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 16px;
+}
+
+h1, h2 { margin: 0 0 10px; }
+.subtitle { color: var(--muted); margin: 0 0 24px; }
+
+/* Shapes */
+.shapes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.shape {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.square {
+  /* Blue gradient square */
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #6db3f2 100%);
+}
+
+.circle {
+  /* Circle with gradient */
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #6db3f2 0%, #1e69de 45%, #153b84 100%);
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.search {
+  display: flex;
+  gap: 8px;
+}
+
+.search input {
+  padding: 10px 12px;
+  border: 1px solid #dde3ee;
+  border-radius: 10px;
+  min-width: 260px;
+  outline: none;
+}
+
+.search button, .geo-btn {
+  padding: 10px 14px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.search button:hover, .geo-btn:hover { filter: brightness(0.95); }
+
+/* Status text */
+.status { color: var(--muted); min-height: 22px; margin-bottom: 12px; }
+
+/* Weather Card */
+.card {
+  background: var(--card);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.hidden { display: none; }
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 18px 20px;
+  background: linear-gradient(135deg, #1e69de, #6db3f2);
+  color: #fff;
+}
+
+.big-temp {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.unit { font-size: 20px; margin-left: 2px; opacity: 0.9; }
+
+.card-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 18px;
+  padding: 18px 20px 22px;
+}
+
+.metric .label { color: var(--muted); font-size: 14px; margin-bottom: 4px; }
+.metric .value { font-weight: 600; }
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 30px 16px 60px;
+  color: var(--muted);
+}
