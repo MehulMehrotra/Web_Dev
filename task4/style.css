@@ -1,0 +1,111 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f4f7fa;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Navbar */
+header {
+  background: #007bff;
+  padding: 15px 30px;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  font-weight: 500;
+}
+
+/* Home Section */
+.home {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.home h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.home p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* About Section */
+.about {
+  padding: 40px 20px;
+  background: #eef2f7;
+}
+
+.about h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.about h3 {
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+.about ul {
+  max-width: 600px;
+  margin: auto;
+  padding-left: 20px;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
